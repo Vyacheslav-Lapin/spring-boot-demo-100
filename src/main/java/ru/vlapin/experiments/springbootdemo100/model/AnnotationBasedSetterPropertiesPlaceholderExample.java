@@ -18,10 +18,16 @@ import org.springframework.validation.annotation.Validated;
 * - need for PUBLIC setters
 *   - so, you have to extract other methods to separate interface and use it by reference
 */
+public interface AnnotationBasedSetterPropertiesPlaceholderExample {
+  String getHost();
+  Integer getPort();
+}
+
 @Data
 @Validated
 @ConfigurationProperties("my-properties")
-public class AnnotationBasedSetterPropertiesPlaceholderExample {
+class AnnotationBasedSetterPropertiesPlaceholderExampleImpl
+    implements AnnotationBasedSetterPropertiesPlaceholderExample {
 
   /**
    * My hostname

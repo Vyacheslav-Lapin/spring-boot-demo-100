@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.ConstructorBinding;
+import org.springframework.boot.context.properties.bind.DefaultValue;
 
 /**
  * Limitations:
@@ -18,6 +19,7 @@ public final class AnnotationBasedImmutablePropertiesPlaceholderExample {
   /**
    * Auth method
    */
+//  @DefaultValue("Lorem ipsum dolor sit amet")
   String authMethod;
 
   /**

@@ -4,8 +4,7 @@ my-properties:
 my-properties2:
   host: my.site.com
 
-mail:
-  credentials:
-    authMethod: basic
-    username: user
-    password: qwerty
+mail.credentials:
+  authMethod: basic
+  username: user
+  password: qwerty
